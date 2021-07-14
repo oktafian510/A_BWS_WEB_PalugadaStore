@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 14, 2021 at 05:39 AM
+-- Generation Time: Jul 14, 2021 at 02:28 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -85,13 +85,6 @@ CREATE TABLE `countries` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `countries`
---
-
-INSERT INTO `countries` (`id`, `country_code`, `country_name`, `created_at`, `updated_at`) VALUES
-(1, '00', 'Indonesia', '2021-06-29 07:19:06', '2021-06-29 07:19:06');
-
 -- --------------------------------------------------------
 
 --
@@ -136,14 +129,6 @@ CREATE TABLE `delivery_address` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `delivery_address`
---
-
-INSERT INTO `delivery_address` (`id`, `users_id`, `users_email`, `name`, `address`, `city`, `state`, `country`, `pincode`, `mobile`, `created_at`, `updated_at`) VALUES
-(1, 2, 'okta@gmail.com', 'oktafian', 'Desa Taman', 'Bondowoso', 'jawatimur', 'Indonesia', '12344321', '085855766655', NULL, NULL),
-(2, 3, 'rexy@mail.com', 'rexy', 'pancoran', 'bondowoso', 'Jawatimur', 'Indonesia', '12345678', '082334739813', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -201,18 +186,6 @@ CREATE TABLE `orders` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`id`, `users_id`, `users_email`, `name`, `address`, `city`, `state`, `pincode`, `country`, `mobile`, `shipping_charges`, `coupon_code`, `coupon_amount`, `order_status`, `payment_method`, `grand_total`, `created_at`, `updated_at`) VALUES
-(11, 2, 'okta@gmail.com', 'oktafian', 'Desa Taman', 'Bondowoso', 'jawatimur', '12344321', 'Indonesia', '085855766655', 0.00, 'NO Coupon', '0', 'success', 'COD', '6000000', '2021-06-29 01:31:45', '2021-06-29 01:31:45'),
-(12, 2, 'okta@gmail.com', 'oktafian', 'Desa Taman', 'Bondowoso', 'jawatimur', '12344321', 'Indonesia', '085855766655', 0.00, 'NO Coupon', '0', 'success', 'COD', '6000000', '2021-06-29 01:31:45', '2021-06-29 01:31:45'),
-(13, 2, 'okta@gmail.com', 'oktafian', 'Desa Taman', 'Bondowoso', 'jawatimur', '12344321', 'Indonesia', '085855766655', 0.00, 'NO Coupon', '0', 'success', 'COD', '6000000', '2021-06-29 01:31:45', '2021-06-29 01:31:45'),
-(14, 2, 'okta@gmail.com', 'oktafian', 'Desa Taman', 'Bondowoso', 'jawatimur', '12344321', 'Indonesia', '085855766655', 0.00, 'NO Coupon', '0', 'success', 'COD', '6000000', '2021-06-29 01:31:46', '2021-06-29 01:31:46'),
-(15, 2, 'okta@gmail.com', 'oktafian', 'Desa Taman', 'Bondowoso', 'jawatimur', '12344321', 'Indonesia', '085855766655', 0.00, 'NO Coupon', '0', 'success', 'COD', '6000000', '2021-06-29 01:31:46', '2021-06-29 01:31:46'),
-(16, 2, 'okta@gmail.com', 'oktafian', 'Desa Taman', 'Bondowoso', 'jawatimur', '12344321', 'Indonesia', '085855766655', 0.00, 'NO Coupon', '0', 'success', 'COD', '600000', '2021-06-29 16:17:20', '2021-06-29 16:17:20');
 
 -- --------------------------------------------------------
 
