@@ -26,6 +26,7 @@
 <!--main-container-part-->
 <div id="content">
     @yield('content')
+
 </div>
 @include('backEnd.layouts.footer')
 @yield('jsblock')

@@ -20,6 +20,7 @@
                 <li><a href="{{route('coupon.index')}}">List Coupons</a></li>
             </ul>
         </li>
+        
     </ul>
 </div>
 <!--sidebar-menu-->
